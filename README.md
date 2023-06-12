@@ -1,0 +1,8 @@
+- install aptos cli https://aptos.dev/tools/install-cli/download-cli-binaries
+- init account `aptos init`
+- test `aptos move test --named-addresses dauth=default`
+- publish `aptos move publish --named-addresses dauth=default`
+- view https://explorer.aptoslabs.com/txn/0xbaee9e0bfe2ed4e726f387dd33d72be533dc4c46706cd5f55b8a151af6c6c433/changes?network=testnet
+- register node `aptos move run --function-id default::node_register::register --args hex:0x00 hex:0x975276b14dde2728cb1a55f75beb08434fcdd0f5f08f97a6a6b9a13b9877b41925a5d78ea0c51a1c8d9b616b897d254503f606af599e31a9ff0f9a600bdee5e4`
+- get_node https://explorer.aptoslabs.com/account/0x80afed6204d726fd4c9b1d6bbc92fa5f45e8ec23fd25375a1a42c0d8bcdd4c25/modules/view/node_register/get_node_pubkey?network=testnet
+- verify https://explorer.aptoslabs.com/account/0x80afed6204d726fd4c9b1d6bbc92fa5f45e8ec23fd25375a1a42c0d8bcdd4c25/modules/view/verify/verify?network=testnet
